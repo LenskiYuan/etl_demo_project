@@ -1,65 +1,81 @@
 # Medical AI Workflow Observability Demo
 
-This repository is a synthetic ETL demo inspired by a real class of observability problems in medical AI workflow platforms. It does **not** reuse private schemas, code, data, or internal business logic. The entire project is rebuilt from scratch with fake entities and deterministic synthetic events.
+This repository is a synthetic ETL and platform demo inspired by the same class of observability problems found in medical AI workflow systems. It does **not** reuse private code, schemas, data, or internal workflows. Everything is rebuilt from scratch with fake entities and deterministic synthetic events.
 
-## What the Demo Shows
+## What This Repository Demonstrates
 
-- synthetic event generation for imaging requests, uploads, queueing, and AI processing
-- analytical transformations into lifecycle and module-run facts
-- monitoring metrics such as queue delay, processing duration, failure rate, and SLA breaches
-- PostgreSQL-ready schema assets and local CSV outputs for easy review
+- synthetic ETL for medical imaging workflow telemetry
+- live PostgreSQL-backed analytics queries
+- a React frontend for operational monitoring
+- a FastAPI backend for authenticated data access and job control
+- a Celery worker for asynchronous ETL runs
+- Keycloak-based authentication and role-driven access
+- multi-user persistent app state through saved dashboard views
 
-## Architecture
+## Stack
 
-1. `src/medical_ai_demo/generator.py` creates raw operational datasets.
-2. `src/medical_ai_demo/pipeline.py` derives analytics tables from the raw events.
-3. `src/medical_ai_demo/reporting.py` computes human-readable monitoring summaries.
-4. `sql/schema/` and `sql/views/` define PostgreSQL-facing warehouse objects.
+- `frontend/`: React + Vite + Keycloak login
+- `backend/`: FastAPI API + Celery worker
+- `src/medical_ai_demo/`: shared ETL pipeline logic
+- `postgres`: raw, analytics, and app-state data
+- `redis`: background job broker/result backend
+- `keycloak`: authentication, users, and roles
 
-The default implementation uses only the Python standard library so it can run locally without extra packages. A PostgreSQL loader stub is included for the next build phase.
+## Service Architecture
 
-## Project Layout
+1. Users sign in through Keycloak.
+2. The React frontend calls the FastAPI backend with bearer tokens.
+3. The backend validates tokens, queries PostgreSQL, and exposes dashboard APIs.
+4. Admin users can trigger ETL runs from the UI.
+5. The backend enqueues work in Redis.
+6. The Celery worker runs the shared ETL pipeline and refreshes raw/analytics tables in PostgreSQL.
+7. User-specific saved views are stored in PostgreSQL and loaded back into the UI.
 
-- `docs/` design notes
-- `sql/schema/` raw and analytics table definitions
-- `sql/views/` reporting views
-- `src/medical_ai_demo/` generator, ETL, reporting, and loader code
-- `data/generated/` pipeline outputs
-- `tests/` pipeline correctness checks
+## Default Demo Accounts
 
-## Quick Start
+- `demo-admin` / `demo-admin-pass`
+- `demo-analyst` / `demo-analyst-pass`
+
+`demo-admin` can trigger ETL jobs. `demo-analyst` can sign in and review data but cannot launch jobs.
+
+## Run The Full Stack
+
+Copy environment values if needed:
+
+```bash
+cp .env.example .env
+```
+
+Then start everything:
+
+```bash
+make up
+```
+
+Services:
+
+- frontend: `http://localhost:5173`
+- backend API: `http://localhost:8000`
+- keycloak: `http://host.docker.internal:8080`
+- postgres: `localhost:5432`
+- redis: `localhost:6379`
+
+Stop the stack:
+
+```bash
+make down
+```
+
+## Local ETL Commands
+
+The original standalone ETL pipeline is still available:
 
 ```bash
 make demo
 make test
 ```
 
-This generates:
-
-- raw CSV datasets under `data/generated/raw/`
-- analytics CSV datasets under `data/generated/analytics/`
-- a markdown report at `data/generated/reports/summary.md`
-
-## Demo Outputs
-
-Key generated metrics include:
-
-- request-to-upload-complete latency
-- upload-complete-to-processing-start latency
-- queue delay before processing starts
-- processing duration by AI module
-- failure rate by module and disease
-- SLA breaches for queue delay and end-to-end runtime
-
-## Local Commands
-
-```bash
-make generate
-make etl
-make report
-```
-
-For direct module execution:
+Or directly:
 
 ```bash
 PYTHONPATH=src python3 -m medical_ai_demo.pipeline generate --seed 7 --requests 120
@@ -67,15 +83,24 @@ PYTHONPATH=src python3 -m medical_ai_demo.pipeline etl
 PYTHONPATH=src python3 -m medical_ai_demo.pipeline report
 ```
 
-## PostgreSQL Direction
+## Frontend Commands
 
-The repository includes PostgreSQL DDL and views. In a later phase, the `postgres_loader.py` module can be expanded to execute bulk loads into a running container started by `docker-compose.yml`.
+```bash
+make frontend-install
+make frontend-build
+```
 
-## Status
+## Repository Layout
 
-This first build establishes the end-to-end demo skeleton:
+- `backend/` API and worker services
+- `frontend/` React application
+- `keycloak/` realm import seed
+- `sql/schema/` raw and analytics DDL
+- `sql/postgres-init/` postgres bootstrap scripts
+- `src/medical_ai_demo/` shared ETL package
+- `tests/` ETL tests
+- `docs/` architecture notes
 
-- deterministic synthetic raw data
-- analytical fact and dimension generation
-- monitoring report generation
-- baseline tests for lifecycle correctness and metric quality
+## Current Scope
+
+The analytics tables currently behave as the latest snapshot produced by the most recent ETL run, while run history and user state persist in app tables. That keeps the demo operationally realistic without turning the warehouse layer into a full historical event store.

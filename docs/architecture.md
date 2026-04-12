@@ -2,7 +2,7 @@
 
 ## Goal
 
-Model the operational lifecycle of a synthetic medical AI imaging workflow and turn raw events into monitoring-friendly analytical tables.
+Model the operational lifecycle of a synthetic medical AI imaging workflow and expose it through an authenticated, multi-user platform with live database-backed monitoring.
 
 ## Pipeline Stages
 
@@ -23,8 +23,14 @@ Model the operational lifecycle of a synthetic medical AI imaging workflow and t
    - `fact_module_runs`
    - `daily_metrics`
 
-3. **Reporting**
-   Summary metrics are emitted as markdown for recruiter-friendly review and as CSV for downstream visualization.
+3. **Application Layer**
+   - FastAPI validates Keycloak-issued bearer tokens
+   - PostgreSQL serves both analytics queries and persistent app state
+   - Celery workers execute ETL jobs asynchronously
+   - React renders the dashboard and triggers runs through the API
+
+4. **Reporting**
+   Summary metrics are emitted as markdown for recruiter-friendly review and as SQL-backed API responses for the frontend.
 
 ## Modeling Choices
 
@@ -32,6 +38,7 @@ Model the operational lifecycle of a synthetic medical AI imaging workflow and t
 - A job can contain multiple module run attempts because retry behavior is important for observability.
 - Queue delay and upload latency are modeled separately because they answer different operational questions.
 - SLA flags are materialized in the lifecycle fact table to keep simple monitoring queries easy.
+- Warehouse tables are refreshed as a latest snapshot, while application tables preserve job history and user-specific saved views.
 
 ## Public-Safe Constraints
 

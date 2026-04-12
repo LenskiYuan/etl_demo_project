@@ -1,0 +1,75 @@
+{
+  "realm": "etl-demo",
+  "enabled": true,
+  "registrationAllowed": false,
+  "resetPasswordAllowed": true,
+  "rememberMe": true,
+  "roles": {
+    "realm": [
+      {
+        "name": "admin"
+      },
+      {
+        "name": "analyst"
+      }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "etl-frontend",
+      "name": "ETL Demo Frontend",
+      "protocol": "openid-connect",
+      "publicClient": true,
+      "directAccessGrantsEnabled": true,
+      "standardFlowEnabled": true,
+      "redirectUris": [
+        "http://localhost:5173/*",
+        "http://host.docker.internal:5173/*"
+      ],
+      "webOrigins": [
+        "http://localhost:5173",
+        "http://host.docker.internal:5173"
+      ],
+      "attributes": {
+        "pkce.code.challenge.method": "S256"
+      }
+    }
+  ],
+  "users": [
+    {
+      "username": "demo-admin",
+      "enabled": true,
+      "email": "admin@example.com",
+      "firstName": "Demo",
+      "lastName": "Admin",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-admin-pass",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "admin",
+        "analyst"
+      ]
+    },
+    {
+      "username": "demo-analyst",
+      "enabled": true,
+      "email": "analyst@example.com",
+      "firstName": "Demo",
+      "lastName": "Analyst",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-analyst-pass",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "analyst"
+      ]
+    }
+  ]
+}
