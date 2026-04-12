@@ -6,18 +6,36 @@ const keycloak = new Keycloak({
   clientId: import.meta.env.VITE_KEYCLOAK_CLIENT_ID || "etl-frontend",
 });
 
-export async function initializeAuth() {
-  const authenticated = await keycloak.init({
-    onLoad: "login-required",
-    checkLoginIframe: false,
-    pkceMethod: "S256",
-  });
+let initPromise = null;
 
-  if (!authenticated) {
-    throw new Error("Authentication failed");
+export async function initializeAuth() {
+  if (keycloak.authenticated) {
+    return keycloak;
   }
 
-  return keycloak;
+  if (initPromise) {
+    return initPromise;
+  }
+
+  initPromise = keycloak
+    .init({
+      onLoad: "login-required",
+      checkLoginIframe: false,
+      pkceMethod: "S256",
+    })
+    .then((authenticated) => {
+      if (!authenticated) {
+        throw new Error("Authentication failed");
+      }
+
+      return keycloak;
+    })
+    .catch((error) => {
+      initPromise = null;
+      throw error;
+    });
+
+  return initPromise;
 }
 
 export function getKeycloak() {
