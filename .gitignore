@@ -1,9 +1,28 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDE files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore
+
+# Database
+*.db
+*.sqlite
+
 __pycache__/
 .pytest_cache/
 .venv/
 *.pyc
 *.pyo
 *.pyd
-.DS_Store
 data/generated/*
 !data/generated/.gitkeep
