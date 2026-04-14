@@ -1,8 +1,10 @@
 # Architecture Notes
 
+![System design diagram](./assets/system-design.png)
+
 ## Goal
 
-Model the operational lifecycle of a synthetic medical AI imaging workflow and expose it through an authenticated, multi-user platform with live database-backed monitoring.
+This ETL pipeline acts as a monitoring and observability layer for a synthetic medical AI DICOM processing multi-tenant platform. It turns raw operational events into analytics tables that help operators understand platform health, processing behavior, tenant activity patterns, and failure trends.
 
 ## Pipeline Stages
 
@@ -32,9 +34,23 @@ Model the operational lifecycle of a synthetic medical AI imaging workflow and e
 4. **Reporting**
    Summary metrics are emitted as markdown for recruiter-friendly review and as SQL-backed API responses for the frontend.
 
+## Observable Metrics
+
+The ETL is designed to support platform monitoring metrics such as:
+
+- request volume and job volume across tenants or hospitals
+- upload completion latency
+- upload-to-processing-start latency
+- queue delay and end-to-end processing time
+- final job success and failure counts
+- per-module failure rates
+- retry frequency through per-attempt module runs
+- daily rollups by AI module
+- simple SLA breach flags for queue delay and end-to-end duration
+
 ## Modeling Choices
 
-- A request can produce one logical processing job.
+- A request can produce one logical DICOM processing job.
 - A job can contain multiple module run attempts because retry behavior is important for observability.
 - Queue delay and upload latency are modeled separately because they answer different operational questions.
 - SLA flags are materialized in the lifecycle fact table to keep simple monitoring queries easy.

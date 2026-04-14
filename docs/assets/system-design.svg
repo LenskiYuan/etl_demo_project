@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1120" width="1800" height="1120">
+  <defs>
+    <marker id="arrow-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#44506b"/>
+    </marker>
+    <marker id="arrow-soft" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7b879d"/>
+    </marker>
+  </defs>
+  <g id="Canvas_1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="0" y="0" width="1800" height="1120"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <rect x="0" y="0" width="1800" height="1120" fill="#f3f6fb"/>
+      </g>
+      <g id="Graphic_3">
+        <title>Text</title>
+        <text transform="translate(80 37.279297)" fill="#14213d">
+          <tspan font-family="Helvetica" font-size="36" fill="#14213d" x="0" y="35" xml:space="preserve">Medical AI Workflow Demo: System Design</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <title>Text</title>
+        <text transform="translate(80 90.13965)" fill="#44506b">
+          <tspan font-family="Helvetica" font-size="18" fill="#44506b" x="0" y="18" xml:space="preserve">Implementation-based view derived from the current FastAPI, Celery, React, PostgreSQL, Redis, and Keycloak code paths.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <rect x="60" y="150" width="1680" height="250" fill="#f7f9fc"/>
+        <rect x="60" y="150" width="1680" height="250" stroke="#d8dfeb" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_6">
+        <title>Text</title>
+        <text transform="translate(86 166.5996)" fill="#14213d">
+          <tspan font-family="Helvetica" font-size="20" fill="#14213d" x="0" y="19" xml:space="preserve">CLIENT AND IDENTITY</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <rect x="100" y="210" width="300" height="175" fill="#fff8e8"/>
+        <rect x="100" y="210" width="300" height="175" stroke="#f0c35f" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_8">
+        <title>Text</title>
+        <text transform="translate(126 240.05957)" fill="#14213d">
+          <tspan font-family="Helvetica" font-size="22" fill="#14213d" x="0" y="21" xml:space="preserve">User Browser</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <title>Text</title>
+        <text transform="translate(126 276.90967)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">Operator signs in,</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <title>Text</title>
+        <text transform="translate(126 301.90967)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">watches metrics,</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <title>Text</title>
+        <text transform="translate(126 326.90967)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">triggers ETL runs, and</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <title>Text</title>
+        <text transform="translate(126 351.90967)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">saves views.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <rect x="560" y="205" width="420" height="180" fill="#ebf2ff"/>
+        <rect x="560" y="205" width="420" height="180" stroke="#80aaff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_14">
+        <title>Text</title>
+        <text transform="translate(586 227.05957)" fill="#14213d">
+          <tspan font-family="Helvetica" font-size="22" fill="#14213d" x="0" y="21" xml:space="preserve">React + Vite Frontend</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <title>Text</title>
+        <text transform="translate(586 263.90967)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">`frontend/src/App.jsx`</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <title>Text</title>
+        <text transform="translate(586 288.90967)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">Bootstraps Keycloak auth and polls data.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <title>Text</title>
+        <text transform="translate(586 313.90967)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">Calls `/api/me`, `/api/overview`,</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <title>Text</title>
+        <text transform="translate(586 338.90967)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">`/api/jobs`, and `/api/views`.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <rect x="1240" y="205" width="360" height="180" fill="#ecfdf3"/>
+        <rect x="1240" y="205" width="360" height="180" stroke="#84d8a8" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_20">
+        <title>Text</title>
+        <text transform="translate(1266 227.05957)" fill="#14213d">
+          <tspan font-family="Helvetica" font-size="22" fill="#14213d" x="0" y="21" xml:space="preserve">Keycloak Identity Provider</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <title>Text</title>
+        <text transform="translate(1266 263.90967)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">Realm import under `keycloak/`</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <title>Text</title>
+        <text transform="translate(1266 288.90967)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">Issues OIDC tokens and realm roles</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <title>Text</title>
+        <text transform="translate(1266 313.90967)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">used by the API for `admin` authorization.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <rect x="60" y="430" width="1680" height="300" fill="#f7f9fc"/>
+        <rect x="60" y="430" width="1680" height="300" stroke="#d8dfeb" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_25">
+        <title>Text</title>
+        <text transform="translate(86 446.5996)" fill="#14213d">
+          <tspan font-family="Helvetica" font-size="20" fill="#14213d" x="0" y="19" xml:space="preserve">APPLICATION AND JOB EXECUTION</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <rect x="150" y="510" width="470" height="190" fill="#ebf2ff"/>
+        <rect x="150" y="510" width="470" height="190" stroke="#80aaff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_27">
+        <title>Text</title>
+        <text transform="translate(176 532.0596)" fill="#14213d">
+          <tspan font-family="Helvetica" font-size="22" fill="#14213d" x="0" y="21" xml:space="preserve">FastAPI Backend</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <title>Text</title>
+        <text transform="translate(176 568.9097)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">`backend/app/main.py` + `security.py`</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <title>Text</title>
+        <text transform="translate(176 593.9097)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">Validates bearer tokens and upserts app users.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <title>Text</title>
+        <text transform="translate(176 618.9097)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">Reads analytics, persists saved views,</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <title>Text</title>
+        <text transform="translate(176 643.9097)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">and queues ETL refresh jobs.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_32">
+        <rect x="800" y="545" width="230" height="135" fill="#fff1ef"/>
+        <rect x="800" y="545" width="230" height="135" stroke="#f3a29a" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_33">
+        <title>Text</title>
+        <text transform="translate(826 567.0596)" fill="#14213d">
+          <tspan font-family="Helvetica" font-size="22" fill="#14213d" x="0" y="21" xml:space="preserve">Redis</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34">
+        <title>Text</title>
+        <text transform="translate(826 603.9097)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">Celery broker and</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <title>Text</title>
+        <text transform="translate(826 628.9097)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">result backend.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36">
+        <rect x="1160" y="495" width="460" height="200" fill="#fff8e8"/>
+        <rect x="1160" y="495" width="460" height="200" stroke="#f0c35f" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_37">
+        <title>Text</title>
+        <text transform="translate(1186 517.0596)" fill="#14213d">
+          <tspan font-family="Helvetica" font-size="22" fill="#14213d" x="0" y="21" xml:space="preserve">Celery Worker</tspan>
+        </text>
+      </g>
+      <g id="Graphic_38">
+        <title>Text</title>
+        <text transform="translate(1186 553.9097)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">`backend/app/tasks.py`</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <title>Text</title>
+        <text transform="translate(1186 578.9097)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">Marks pipeline runs running, succeeded, or failed.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_40">
+        <title>Text</title>
+        <text transform="translate(1186 603.9097)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">Invokes the ETL snapshot loader and writes</tspan>
+        </text>
+      </g>
+      <g id="Graphic_41">
+        <title>Text</title>
+        <text transform="translate(1186 628.9097)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">status or errors back into Postgres.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_42">
+        <rect x="60" y="760" width="1680" height="300" fill="#f7f9fc"/>
+        <rect x="60" y="760" width="1680" height="300" stroke="#d8dfeb" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_43">
+        <title>Text</title>
+        <text transform="translate(86 776.5996)" fill="#14213d">
+          <tspan font-family="Helvetica" font-size="20" fill="#14213d" x="0" y="19" xml:space="preserve">DATA AND SHARED ETL LAYER</tspan>
+        </text>
+      </g>
+      <g id="Graphic_44">
+        <rect x="120" y="845" width="380" height="175" fill="#fff8e8"/>
+        <rect x="120" y="845" width="380" height="175" stroke="#f0c35f" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_45">
+        <title>Text</title>
+        <text transform="translate(146 867.0596)" fill="#14213d">
+          <tspan font-family="Helvetica" font-size="22" fill="#14213d" x="0" y="21" xml:space="preserve">Shared ETL Package</tspan>
+        </text>
+      </g>
+      <g id="Graphic_46">
+        <title>Text</title>
+        <text transform="translate(146 903.9097)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">`src/medical_ai_demo/`</tspan>
+        </text>
+      </g>
+      <g id="Graphic_47">
+        <title>Text</title>
+        <text transform="translate(146 928.9097)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">Synthetic generators build raw telemetry.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_48">
+        <title>Text</title>
+        <text transform="translate(146 953.9097)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">Transforms produce analytics tables.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_49">
+        <title>Text</title>
+        <text transform="translate(146 978.9097)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">Reporting writes a markdown summary.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_50">
+        <rect x="747.27906" y="820" width="600" height="210" fill="#ecfdf3"/>
+        <rect x="747.27906" y="820" width="600" height="210" stroke="#84d8a8" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_51">
+        <title>Text</title>
+        <text transform="translate(783.9443 845)" fill="#14213d">
+          <tspan font-family="Helvetica" font-size="22" fill="#14213d" x="0" y="21" xml:space="preserve">PostgreSQL</tspan>
+        </text>
+      </g>
+      <g id="Graphic_52">
+        <title>Text</title>
+        <text transform="translate(783.9443 881.8501)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">One database with three logical areas:</tspan>
+        </text>
+      </g>
+      <g id="Graphic_53">
+        <title>Text</title>
+        <text transform="translate(783.9443 911.8501)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">`raw.*` synthetic source events</tspan>
+        </text>
+      </g>
+      <g id="Graphic_54">
+        <title>Text</title>
+        <text transform="translate(783.9443 936.8501)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">`analytics.*` dimensions, facts, and metrics</tspan>
+        </text>
+      </g>
+      <g id="Graphic_55">
+        <title>Text</title>
+        <text transform="translate(783.9443 961.8501)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">`app.*` users, pipeline runs, and saved views</tspan>
+        </text>
+      </g>
+      <g id="Graphic_56">
+        <title>Text</title>
+        <text transform="translate(783.9443 993.3901)" fill="#44506b">
+          <tspan font-family="Helvetica" font-size="15" fill="#44506b" x="0" y="15" xml:space="preserve">The worker truncates and reloads raw/analytics snapshot tables on each ETL run.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_57">
+        <rect x="1495" y="850" width="230" height="143" fill="white"/>
+        <rect x="1495" y="850" width="230" height="143" stroke="#b7c3d8" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_58">
+        <title>Text</title>
+        <text transform="translate(1521 872.0596)" fill="#14213d">
+          <tspan font-family="Helvetica" font-size="22" fill="#14213d" x="0" y="21" xml:space="preserve">Report Output</tspan>
+        </text>
+      </g>
+      <g id="Graphic_59">
+        <title>Text</title>
+        <text transform="translate(1521 908.9097)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">Generated markdown</tspan>
+        </text>
+      </g>
+      <g id="Graphic_60">
+        <title>Text</title>
+        <text transform="translate(1521 933.9097)" fill="#24324a">
+          <tspan font-family="Helvetica" font-size="17" fill="#24324a" x="0" y="16" xml:space="preserve">summary artifact.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_61">
+        <line x1="400" y1="290" x2="560" y2="290" marker-end="url(#arrow-dark)" stroke="#44506b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_62">
+        <title>Text</title>
+        <text transform="translate(424.5733 266)" fill="#44506b">
+          <tspan font-family="Helvetica" font-size="16" fill="#44506b" x="0" y="15" xml:space="preserve">UI interaction</tspan>
+        </text>
+      </g>
+      <g id="Graphic_63">
+        <line x1="980" y1="260" x2="1240" y2="260" marker-end="url(#arrow-dark)" stroke="#44506b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_64">
+        <line x1="1240" y1="325" x2="980" y2="325" marker-end="url(#arrow-dark)" stroke="#44506b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_65">
+        <title>Text</title>
+        <text transform="translate(1064.7695 237.09033)" fill="#44506b">
+          <tspan font-family="Helvetica" font-size="16" fill="#44506b" x="0" y="15" xml:space="preserve">OIDC login</tspan>
+        </text>
+      </g>
+      <g id="Graphic_66">
+        <title>Text</title>
+        <text transform="translate(1067.9102 303.83984)" fill="#44506b">
+          <tspan font-family="Helvetica" font-size="16" fill="#44506b" x="0" y="15" xml:space="preserve">JWT tokens</tspan>
+        </text>
+      </g>
+      <g id="Graphic_67">
+        <line x1="700" y1="385" x2="330" y2="510" marker-end="url(#arrow-dark)" stroke="#44506b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_68">
+        <title>Text</title>
+        <text transform="translate(632.42065 405.5)" fill="#44506b">
+          <tspan font-family="Helvetica" font-size="16" fill="#44506b" x="0" y="15" xml:space="preserve">Bearer-authenticated API calls</tspan>
+        </text>
+      </g>
+      <g id="Graphic_69">
+        <line x1="1320" y1="385" x2="390" y2="510" marker-end="url(#arrow-soft)" stroke="#7b879d" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2.5"/>
+      </g>
+      <g id="Graphic_70">
+        <title>Text</title>
+        <text transform="translate(1186 405.5)" fill="#44506b">
+          <tspan font-family="Helvetica" font-size="16" fill="#44506b" x="0" y="15" xml:space="preserve">Discovery + JWKS fetch for token validation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_71">
+        <line x1="620" y1="610" x2="800" y2="610" marker-end="url(#arrow-dark)" stroke="#44506b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_72">
+        <title>Text</title>
+        <text transform="translate(656.4805 584.1499)" fill="#44506b">
+          <tspan font-family="Helvetica" font-size="16" fill="#44506b" x="0" y="15" xml:space="preserve">Queue ETL job</tspan>
+        </text>
+      </g>
+      <g id="Graphic_73">
+        <line x1="1030" y1="610" x2="1160" y2="610" marker-end="url(#arrow-dark)" stroke="#44506b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_74">
+        <title>Text</title>
+        <text transform="translate(1046.9805 585.5)" fill="#44506b">
+          <tspan font-family="Helvetica" font-size="16" fill="#44506b" x="0" y="15" xml:space="preserve">Dispatch task</tspan>
+        </text>
+      </g>
+      <g id="Graphic_75">
+        <line x1="1250" y1="695" x2="500" y2="845" marker-end="url(#arrow-dark)" stroke="#44506b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_76">
+        <title>Text</title>
+        <text transform="translate(1080.8175 735.5)" fill="#44506b">
+          <tspan font-family="Helvetica" font-size="16" fill="#44506b" x="0" y="15" xml:space="preserve">Run snapshot ETL</tspan>
+        </text>
+      </g>
+      <g id="Graphic_77">
+        <line x1="590" y1="670" x2="980" y2="820" marker-end="url(#arrow-dark)" stroke="#44506b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_78">
+        <title>Text</title>
+        <text transform="translate(484.28796 735.5)" fill="#44506b">
+          <tspan font-family="Helvetica" font-size="16" fill="#44506b" x="0" y="15" xml:space="preserve">Read analytics and persist app state</tspan>
+        </text>
+      </g>
+      <g id="Graphic_79">
+        <line x1="500" y1="930" x2="746.5" y2="930" marker-end="url(#arrow-dark)" stroke="#44506b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_80">
+        <title>Text</title>
+        <text transform="translate(550.09766 904.9489)" fill="#44506b">
+          <tspan font-family="Helvetica" font-size="16" fill="#44506b" x="0" y="15" xml:space="preserve">Load raw + analytics</tspan>
+        </text>
+      </g>
+      <g id="Graphic_81">
+        <line x1="1347.279" y1="919.2847" x2="1495.2" y2="919.2847" marker-end="url(#arrow-dark)" stroke="#44506b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Graphic_82">
+        <title>Text</title>
+        <text transform="translate(1366.3633 895.0101)" fill="#44506b">
+          <tspan font-family="Helvetica" font-size="16" fill="#44506b" x="0" y="15" xml:space="preserve">Write summary</tspan>
+        </text>
+      </g>
+      <g id="Graphic_83">
+        <path d="M 1145.5902 39.5 L 1573.5902 39.5 C 1581.3222 39.5 1587.5902 45.768014 1587.5902 53.5 L 1587.5902 81 C 1587.5902 88.73199 1581.3222 95 1573.5902 95 L 1145.5902 95 C 1137.8582 95 1131.5902 88.73199 1131.5902 81 L 1131.5902 53.5 C 1131.5902 45.768014 1137.8582 39.5 1145.5902 39.5 Z" fill="white"/>
+      </g>
+      <g id="Graphic_84">
+        <title>Text</title>
+        <text transform="translate(1151.5902 60.44971)" fill="#44506b">
+          <tspan font-family="Helvetica" font-size="15" fill="#44506b" x="0" y="15" xml:space="preserve">Public-safe: synthetic data, fake entities, demo-only auth seed</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

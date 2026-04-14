@@ -37,9 +37,9 @@ input {
 
 .hero {
   display: grid;
-  grid-template-columns: 1.8fr 1fr;
+  grid-template-columns: minmax(0, 1.95fr) minmax(180px, 0.1fr);
   gap: 24px;
-  align-items: stretch;
+  align-items: start;
 }
 
 .hero-copy,
@@ -68,9 +68,9 @@ input {
 
 .hero h1 {
   margin: 0 0 16px;
-  font-size: clamp(2.2rem, 5vw, 4.5rem);
-  line-height: 0.96;
-  max-width: 12ch;
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+  line-height: 1.05;
+  /* max-width: 18ch; */
 }
 
 .hero p {
@@ -81,13 +81,23 @@ input {
 }
 
 .hero-card {
-  padding: 28px;
+  padding: 18px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-self: start;
+  justify-self: end;
+  width: fit-content;
+  min-width: 0;
+  gap: 10px;
   background:
     linear-gradient(160deg, rgba(21, 94, 239, 0.1), rgba(255, 255, 255, 0.82)),
     rgba(255, 255, 255, 0.9);
+}
+
+.hero-card .secondary-button {
+  align-self: flex-start;
+  padding: 10px 14px;
 }
 
 .user-chip,
